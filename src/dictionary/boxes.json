@@ -1,0 +1,111 @@
+{
+    "OldBox": [
+        {
+            "item": "Money",
+            "type": "misc",
+            "emoji": "💵",
+            "amount": 150
+        },
+        {
+            "item": "Herbs",
+            "type": "seed",
+            "emoji": "🌿",
+            "amount": 10
+        },
+        {
+            "item": "Cherries",
+            "type": "seed",
+            "emoji": "🍒",
+            "amount": 5
+        },
+        {
+            "item": "Shovel",
+            "type": "tool",
+            "emoji": "🔨",
+            "amount": 1
+        }
+    ],
+    "WoodenCrate": [
+        {
+            "item": "Money",
+            "type": "misc",
+            "emoji": "💵",
+            "amount": 350
+        },
+        {
+            "item": "Herbs",
+            "type": "seed",
+            "emoji": "🌿",
+            "amount": 30
+        },
+        {
+            "item": "Cherries",
+            "type": "seed",
+            "emoji": "🍒",
+            "amount": 15
+        },
+        {
+            "item": "Shovel",
+            "type": "tool",
+            "emoji": "🔨",
+            "amount": 2
+        },
+        {
+            "item": "Eggplants",
+            "type": "seed",
+            "emoji": "🍆",
+            "amount": 5
+        },
+        {
+            "item": "Roullete Token",
+            "type": "token",
+            "emoji": "Ⓜ",
+            "amount": 2
+        },
+        {
+            "item": "Small Fertilizer",
+            "type": "misc",
+            "emoji": "🐾",
+            "amount": 1
+        }
+    ],
+    "OldShipmentCrate": [
+        {
+            "item": "Money",
+            "type": "misc",
+            "emoji": "💵",
+            "amount": 500
+        },
+        {
+            "item": "Pickaxe",
+            "type": "tool",
+            "emoji": "🔨",
+            "amount": 2
+        },
+        {
+            "item": "Cherries",
+            "type": "seed",
+            "emoji": "🍒",
+            "amount": 15
+        },
+        {
+            "item": "Shovel",
+            "type": "tool",
+            "emoji": "🔨",
+            "amount": 2
+        },
+        {
+            "item": "Eggplants",
+            "type": "seed",
+            "emoji": "🍆",
+            "amount": 5
+        },
+        {
+            "item": "Ruby Fruit",
+            "type": "products",
+            "emoji": "<:ruby_fruit:1184165717420023819>",
+            "amount": 1
+        }
+        
+    ]
+}
