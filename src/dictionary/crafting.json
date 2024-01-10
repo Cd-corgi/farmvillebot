@@ -1,0 +1,117 @@
+[
+    {
+        "item": "Packed Salt",
+        "emoji": "🧂",
+        "type": "products",
+        "description": "Well prepared Sodium Portion packed in a little Paper bag. Useful to make food or sell them in big quantities.",
+        "amountResult": 1,
+        "recipe": [
+            {
+                "name": "Paper Bag",
+                "type": "tool",
+                "amount": 1
+            },
+            {
+                "name": "Raw Salt",
+                "type": "products",
+                "amount": 2
+            }
+        ]
+    },
+    {
+        "item": "Salad Bowl",
+        "emoji": "🥗",
+        "type": "products",
+        "description": "A cute and healing mixing of vegetables. A bit salty, but perfect for a diet.",
+        "amountResult": 1,
+        "recipe": [
+            {
+                "name": "Herbs",
+                "type": "products",
+                "amount": 2
+            },
+            {
+                "name": "Eggplants",
+                "type": "products",
+                "amount": 2
+            },
+            {
+                "name": "Green Pea",
+                "type": "products",
+                "amount": 2
+            },
+            {
+                "name": "Packed Salt",
+                "type": "products",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "item": "Flour",
+        "emoji": "🍳",
+        "type": "products",
+        "description": "A great base ingredient to make several recipes",
+        "amountResult": 1,
+        "recipe": [
+            {
+                "name": "Wheat",
+                "type": "products",
+                "amount": 10
+            },
+            {
+                "name": "Paper Bag",
+                "type": "tool",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "item": "Pumpkin Pie",
+        "emoji": "🥧",
+        "type": "products",
+        "description": "From the hardest vegetable, comes to your table with a great taste",
+        "amountResult": 1,
+        "recipe": [
+            {
+                "name": "Flour",
+                "type": "products",
+                "amount": 3
+            },
+            {
+                "name": "Pumpkin",
+                "type": "products",
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "item": "Magical Colorful Box",
+        "emoji": "⏹",
+        "type": "crate",
+        "description": "The Combination of the four magical fruits. The legends says that they contains a little good reward for you!",
+        "amountResult": 1,
+        "recipe": [
+            {
+                "name": "Ruby Fruit",
+                "type": "products",
+                "amount": 1
+            },
+            {
+                "name": "Amber Fruit",
+                "type": "products",
+                "amount": 1
+            },
+            {
+                "name": "Emerald Fruit",
+                "type": "products",
+                "amount": 1
+            },
+            {
+                "name": "Diamond Fruit",
+                "type": "products",
+                "amount": 1
+            }
+        ]
+    }
+]

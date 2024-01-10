@@ -1,0 +1,378 @@
+{
+    "seed": [
+        {
+            "name": "Cherries",
+            "type": "seed",
+            "emoji": "🍒",
+            "stackable": true,
+            "price": 5
+        },
+        {
+            "name": "Corn",
+            "type": "seed",
+            "emoji": "🌽",
+            "stackable": true,
+            "price": 30
+        },
+        {
+            "name": "Eggplants",
+            "type": "seed",
+            "emoji": "🍆",
+            "stackable": true,
+            "price": 45
+        },
+        {
+            "name": "Herbs",
+            "type": "seed",
+            "emoji": "🌿",
+            "stackable": true,
+            "price": 10
+        },
+        {
+            "name": "Wheat",
+            "type": "seed",
+            "emoji": "🌾",
+            "stackable": true,
+            "price": 15
+        },
+        {
+            "name": "Pumpkin",
+            "type": "seed",
+            "emoji": "🎃",
+            "stackable": true,
+            "price": 75
+        },
+        {
+            "name": "Diamond Fruit",
+            "type": "seed",
+            "emoji": "<:diamond_fruit:1184165721765326878>",
+            "stackable": true,
+            "price": 5000
+        },
+        {
+            "name": "Emerald Fruit",
+            "type": "seed",
+            "emoji": "<:emerald_fruit:1184165720356036639>",
+            "stackable": true,
+            "price": 1500
+        },
+        {
+            "name": "Amber Fruit",
+            "type": "seed",
+            "emoji": "<:ambar_fruit:1184165724147683360>",
+            "stackable": true,
+            "price": 1000
+        },
+        {
+            "name": "Green Pea",
+            "type": "seed",
+            "emoji": "🌱",
+            "stackable": true,
+            "price": 20
+        },
+        {
+            "name": "Ruby Fruit",
+            "type": "seed",
+            "emoji": "<:ruby_fruit:1184165717420023819>",
+            "stackable": true,
+            "price": 500
+        }
+    ],
+    "tool": [
+        {
+            "name": "Water Sprinkler",
+            "type": "tool",
+            "emoji": "🚿",
+            "stackable": false,
+            "price": 40
+        },
+        {
+            "name": "Rake",
+            "type": "tool",
+            "emoji": "🔨",
+            "stackable": false,
+            "price": 75
+        },
+        {
+            "name": "Hoe",
+            "type": "tool",
+            "emoji": "🔨",
+            "stackable": false,
+            "price": 44
+        },
+        {
+            "name": "Shovel",
+            "type": "tool",
+            "emoji": "🔨",
+            "stackable": true,
+            "price": 20
+        },
+        {
+            "name": "Pickaxe",
+            "type": "tool",
+            "emoji": "🔨",
+            "stackable": true,
+            "price": 35
+        },
+        {
+            "name": "Fishing Rod",
+            "type": "tool",
+            "emoji": "🎣",
+            "stackable": true,
+            "price": 15
+        },
+        {
+            "name": "Paper Bag",
+            "type": "tool",
+            "emoji": "👜",
+            "stackable": true,
+            "price": 10
+        }
+    ],
+    "products": [
+        {
+            "name": "Cherries",
+            "type": "products",
+            "emoji": "🍒",
+            "stackable": true,
+            "price": 15
+        },
+        {
+            "name": "Corn",
+            "type": "products",
+            "emoji": "🌽",
+            "stackable": true,
+            "price": 55
+        },
+        {
+            "name": "Eggplants",
+            "type": "products",
+            "emoji": "🍆",
+            "stackable": true,
+            "price": 55
+        },
+        {
+            "name": "Pumpkin",
+            "type": "products",
+            "emoji": "🎃",
+            "stackable": true,
+            "price": 75
+        },
+        {
+            "name": "Herbs",
+            "type": "products",
+            "emoji": "🌿",
+            "stackable": true,
+            "price": 9
+        },
+        {
+            "name": "Flour",
+            "type": "products",
+            "emoji": "🍳",
+            "stackable": true,
+            "price": 0
+        },
+        {
+            "name": "Pumpkin Pie",
+            "type": "products",
+            "emoji": "🥧",
+            "stackable": true,
+            "price": 100
+        },
+        {
+            "name": "Wheat",
+            "type": "products",
+            "emoji": "🌾",
+            "stackable": true,
+            "price": 30
+        },
+        {
+            "name": "Raw Salt",
+            "type": "products",
+            "emoji": "🧂",
+            "stackable": true,
+            "price": 0
+        },
+        {
+            "name": "Packed Salt",
+            "type": "products",
+            "emoji": "🧂",
+            "stackable": true,
+            "price": 45
+        },
+        {
+            "name": "Salad Bowl",
+            "type": "products",
+            "emoji": "🥗",
+            "stackable": true,
+            "price": 75
+        },
+        {
+            "name": "Diamond Fruit",
+            "type": "products",
+            "emoji": "<:diamond_fruit:1184165721765326878>",
+            "stackable": true,
+            "price": 5000
+        },
+        {
+            "name": "Emerald Fruit",
+            "type": "products",
+            "emoji": "<:emerald_fruit:1184165720356036639>",
+            "stackable": true,
+            "price": 1500
+        },
+        {
+            "name": "Amber Fruit",
+            "type": "products",
+            "emoji": "<:ambar_fruit:1184165724147683360>",
+            "stackable": true,
+            "price": 1000
+        },
+        {
+            "name": "Ruby Fruit",
+            "type": "products",
+            "emoji": "<:ruby_fruit:1184165717420023819>",
+            "stackable": true,
+            "price": 500
+        }
+    ],
+    "misc": [
+        {
+            "name": "Small Fertilizer",
+            "type": "misc",
+            "emoji": "🐾",
+            "stackable": true,
+            "price": 25
+        },
+        {
+            "name": "Medium Fertilizer",
+            "type": "misc",
+            "emoji": "🐾",
+            "stackable": true,
+            "price": 50
+        },
+        {
+            "name": "Big Fertilizer",
+            "type": "misc",
+            "emoji": "🐾",
+            "stackable": true,
+            "price": 75
+        },
+        {
+            "name": "Money",
+            "type": "misc",
+            "emoji": "💵",
+            "stackable": true,
+            "price": 0
+        },
+        {
+            "name": "Small Padlock",
+            "type": "misc",
+            "emoji": "🔒",
+            "stackable": true,
+            "price": 150
+        },
+        {
+            "name": "Padlock",
+            "type": "misc",
+            "emoji": "🔒",
+            "stackable": true,
+            "price": 250
+        },
+        {
+            "name": "Sodium River",
+            "type": "misc",
+            "emoji": "🌊",
+            "stackable": false,
+            "price": 0
+        }
+    ],
+    "tokens": [
+        {
+            "name": "Roullete Token",
+            "type": "token",
+            "emoji": "Ⓜ",
+            "stackable": true
+        },
+        {
+            "name": "Special token",
+            "type": "token",
+            "emoji": "🟠",
+            "stackable": true
+        }
+    ],
+    "crates": [
+        {
+            "name": "Old Box",
+            "type": "crate",
+            "emoji": "📦",
+            "stackable": true,
+            "price": 0
+        },
+        {
+            "name": "Wooden Crate",
+            "type": "crate",
+            "emoji": "📦",
+            "stackable": true,
+            "price": 0
+        },
+        {
+            "name": "Old Shipment Crate",
+            "type": "crate",
+            "emoji": "📦",
+            "stackable": true,
+            "price": 0
+        },
+        {
+            "name": "Magical Colorful Box",
+            "type": "crate",
+            "emoji": "⏹",
+            "stackable": true,
+            "price": 0
+        }
+    ],
+    "fishes": [
+        {
+            "name": "Fish",
+            "type": "fishes",
+            "emoji": "🐟",
+            "stackable": true,
+            "price": 15
+        },
+        {
+            "name": "Balloon Fish",
+            "type": "fishes",
+            "emoji": "🐡",
+            "stackable": true,
+            "price": 30
+        },
+        {
+            "name": "Tropical Fish",
+            "type": "fishes",
+            "emoji": "🐠",
+            "stackable": true,
+            "price": 45
+        },
+        {
+            "name": "Shark",
+            "type": "fishes",
+            "emoji": "🦈",
+            "stackable": true,
+            "price": 75
+        },
+        {
+            "name": "Octocus",
+            "type": "fishes",
+            "emoji": "🐙",
+            "stackable": true,
+            "price": 90
+        },
+        {
+            "name": "Squiward",
+            "type": "fishes",
+            "emoji": "🦑",
+            "stackable": true,
+            "price": 120
+        }
+    ]
+}

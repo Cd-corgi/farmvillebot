@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Herbs",
+        "emoji": "🌿",
+        "type": "seed",
+        "probability": 0.82,
+        "amount": 3
+    },
+    {
+        "name": "Wheat",
+        "emoji": "🌾",
+        "type": "seed",
+        "probability": 0.74,
+        "amount": 3
+    },
+    {
+        "name": "Old Box",
+        "emoji": "📦",
+        "type": "crate",
+        "probability": 0.65,
+        "amount": 1
+    },
+    {
+        "name": "Roullete Token",
+        "emoji": "Ⓜ",
+        "type": "token",
+        "probability": 0.50,
+        "amount": 2
+    },
+    {
+        "name": "Wooden Crate",
+        "emoji": "📦",
+        "type": "crate",
+        "probability": 0.15,
+        "amount": 1
+    },
+    {
+        "name": "Old Shipment Crate",
+        "emoji": "📦",
+        "type": "crate",
+        "probability": 0.05,
+        "amount": 1
+    }
+]

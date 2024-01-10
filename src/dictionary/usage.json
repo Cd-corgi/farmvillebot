@@ -1,0 +1,154 @@
+{
+    "items": [
+        {
+            "itemName": "Rake",
+            "usageDialoge": "You clean your plots with the rake. It looks nice and organized.\nYour next plantations will have 5% less time to harvest.",
+            "effects": {
+                "name": "Time Reduction",
+                "duration": 7200000
+            }
+        },
+        {
+            "itemName": "Hoe",
+            "usageDialoge": "You prepare your plots with the hoe. They are deep enough to make roots in the moistest layer of your soil.\nYour plots will reduce production time by 15%",
+            "effects": {
+                "name": "Time Reduction",
+                "duration": 4680000
+            }
+        },
+        {
+            "itemName": "Small Fertilizer",
+            "usageDialoge": "Spread a small portion of fertilizer on your plots. Nourish your crops by making their growth somewhat accelerated.\nYour next crops will have 15% less production time",
+            "effects": {
+                "name": "Time Acceleration",
+                "duration": 2700000
+            }
+        },
+        {
+            "itemName": "Medium Fertilizer",
+            "usageDialoge": "Spread a good portion of fertilizer on your plots. Nourish your crops by making their growth somewhat accelerated.\nYour next crops will have 30% less production time",
+            "effects": {
+                "name": "Time Acceleration",
+                "duration": 3600000
+            }
+        },
+        {
+            "itemName": "Big Fertilizer",
+            "usageDialoge": "Spread a great portion of fertilizer on your plots. Nourish your crops by making their growth somewhat accelerated.\nYour next crops will have 50% less production time",
+            "effects": {
+                "name": "Time Acceleration",
+                "duration": 18000000
+            }
+        },
+        {
+            "itemName": "Water Sprinkler",
+            "usageDialoge": "You nourish your plants with rich water to make them hydrated and strong during the seasons. You reduce 30% of time to collect your crops.",
+            "effects": {
+                "name": "Time Acceleration",
+                "duration": 3600000
+            }
+        },
+        {
+            "itemName": "Pickaxe",
+            "usageDialoge": "You give your human effort to create a hole deep enough to plant your crops. you speed up 10% of the cultivation time.",
+            "effects": {
+                "name": "Time Acceleration",
+                "duration": 10800000
+            }
+        },
+        {
+            "itemName": "Shovel",
+            "usageDialoge": "The shovel has been used to remove the invasive weeds from your cared for plants. This action gives your plants a 20% acceleration",
+            "effects": {
+                "name": "Time Acceleration",
+                "duration": 3300000
+            }
+        },
+        {
+            "itemName": "Small Padlock",
+            "usageDialoge": "A little safe item to make you immune from the raiders!",
+            "effects": {
+                "name": "Protection",
+                "duration": 5400000
+            }
+        },
+        {
+            "itemName": "Padlock",
+            "usageDialoge": "A great item to make you immune from the raiders!",
+            "effects": {
+                "name": "Protection",
+                "duration": 10800000
+            }
+        },
+        {
+            "itemName": "Roullete Token",
+            "usageDialoge": "You feels the Token. It has some marks as a roullete. Use it with the Roullete."
+        },
+        {
+            "itemName": "Old Box",
+            "usageDialoge": "This Old Box has something inside... Let's check it out!"
+        },
+        {
+            "itemName": "Wooden Crate",
+            "usageDialoge": "A little hard... But it has something inside. Let's check it out!"
+        },
+        {
+            "itemName": "Old Shipment Crate",
+            "usageDialoge": "This box belongs to an old ship, but it ended up sinking. It has something inside. Let's see how it goes."
+        },
+        {
+            "itemName": "Magical Colorful Box",
+            "usageDialoge": "The spatial blessing brings together the 4 crystal fruits once again and with this it has formed a box that for thousands of light years is a kind of chest with things sent."
+        }
+    ],
+    "effect": [
+        {
+            "itemName": "Rake",
+            "effect": "Time Reduction",
+            "values": 0.05
+        },
+        {
+            "itemName": "Hoe",
+            "effect": "Time Reduction",
+            "values": 0.15
+        },
+        {
+            "itemName": "Small Fertilizer",
+            "effect": "Fertilized",
+            "values": 0.15
+        },
+        {
+            "itemName": "Medium Fertilizer",
+            "effect": "Fertilized",
+            "values": 0.30
+        },
+        {
+            "itemName": "Big Fertilizer",
+            "effect": "Fertilized",
+            "values": 0.5
+        },
+        {
+            "itemName": "Water Sprinkler",
+            "effect": "Time Acceleration",
+            "values": 0.30
+        },
+        {
+            "itemName": "Pickaxe",
+            "effect": "Time Acceleration",
+            "values": 0.10
+        },
+        {
+            "itemName": "Shovel",
+            "effect":"Time Acceleration",
+            "values": 0.20
+        },
+        {
+            "itemName": "Small Padlock",
+            "effect":"Protection"
+        },
+        {
+            "itemName": "Padlock",
+            "effect":"Protection"
+        }
+    ]
+}

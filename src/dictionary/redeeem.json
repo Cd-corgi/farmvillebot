@@ -1,0 +1,121 @@
+{
+    "aB3dE1": {
+        "money": 550,
+        "items": []
+    },
+    "Z9yH2k": {
+        "money": 550,
+        "items": [
+            {
+                "item": "Cherries",
+                "type": "seed",
+                "emoji": "🍒",
+                "amount": 10
+            },
+            {
+                "item": "Herbs",
+                "type": "seed",
+                "emoji": "🌿",
+                "amount": 10
+            }
+        ]
+    },
+    "g2fish": {
+        "money": 50,
+        "items": [
+            {
+                "item": "Fish",
+                "type": "fishes",
+                "emoji": "🐟",
+                "amount": 5
+            },
+            {
+                "item": "Balloon Fish",
+                "type": "fishes",
+                "emoji": "🐡",
+                "amount": 3
+            },
+            {
+                "item": "Tropical Fish",
+                "type": "fishes",
+                "emoji": "🐠",
+                "amount": 5
+            },
+            {
+                "item": "Shark",
+                "type": "fishes",
+                "emoji": "🦈",
+                "amount": 1
+            },
+            {
+                "item": "Octocus",
+                "type": "fishes",
+                "emoji": "🐙",
+                "amount": 1
+            },
+            {
+                "item": "Fishing Rod",
+                "type": "tool",
+                "emoji": "🎣",
+                "amount": 3
+            }
+        ]
+    },
+    "pQ5rS8": {
+        "money": 0,
+        "items": [
+            {
+                "item": "Flour",
+                "type": "products",
+                "emoji": "🍳",
+                "amount": 3
+            },
+            {
+                "item": "Pumpkin",
+                "type": "products",
+                "emoji": "🎃",
+                "amount": 3
+            }
+        ]
+    },
+    "JW7R1T": {
+        "money": 10,
+        "items": [
+            {
+                "item": "Diamond Fruit",
+                "type": "products",
+                "emoji": "<:diamond_fruit:1184165721765326878>",
+                "amount": 1
+            },
+            {
+                "item": "Amber Fruit",
+                "type": "products",
+                "emoji": "<:ambar_fruit:1184165724147683360>",
+                "amount": 1
+            },
+            {
+                "item": "Emerald Fruit",
+                "type": "products",
+                "emoji": "<:emerald_fruit:1184165720356036639>",
+                "amount": 1
+            },
+            {
+                "item": "Ruby Fruit",
+                "type": "products",
+                "emoji": "<:ruby_fruit:1184165717420023819>",
+                "amount": 1
+            }
+        ]
+    },
+    "M4GB0X": {
+        "money": 2000,
+        "items": [
+            {
+                "item": "Magical Colorful Box",
+                "type": "crate",
+                "emoji": "⏹",
+                "amount": 1
+            } 
+        ]
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "token": "",
+    "mongo": "",
+    "mailUser": "",
+    "mailPass": "",
+    "botID": "",
+    "refreshTicks": 5000,
+    "ownerId": ""
+}

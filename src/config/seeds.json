@@ -1,0 +1,200 @@
+[
+    {
+        "name": "Herbs",
+        "type": "seed",
+        "emoji": "🌿",
+        "description": "Herbs intended for condiments can be dried and sold ground for spices. The price is somewhat dubious but it's a good start.",
+        "time2claim": 900000,
+        "unitsXSlot": 3,
+        "item": {
+            "itemName": "Herbs",
+            "type": "products",
+            "emoji": "🌿",
+            "price": 9,
+            "units": {
+                "min": 5,
+                "max": 15
+            }
+        }
+    },
+    {
+        "name": "Wheat",
+        "type": "seed",
+        "emoji": "🌾",
+        "description": "Fundamental cereal for human consumption. At a somewhat modest price to start... Recommended if you plant very often",
+        "time2claim": 1800000,
+        "unitsXSlot": 4,
+        "item": {
+            "itemName": "Wheat",
+            "type": "products",
+            "emoji": "🌾",
+            "price": 30,
+            "units": {
+                "min": 3,
+                "max": 9
+            }
+        }        
+    },
+    {
+        "name": "Corn",
+        "type": "seed",
+        "emoji": "🌽",
+        "description": "Geared and compressed vegetable in a kind of geared branch. It is used to sell it as an essential part for soups, canned products, etc.",
+        "time2claim": 4800000,
+        "unitsXSlot": 2,
+        "item": {
+            "itemName": "Corn",
+            "type": "products",
+            "emoji": "🌽",
+            "price": 55,
+            "units": {
+                "min": 1,
+                "max": 6
+            }
+        }
+    },
+    {
+        "name": "Cherries",
+        "type": "seed",
+        "emoji": "🍒",
+        "description": "Little but sweet couple of red fruits. Perfect to be topics to food, ice cream and much more.",
+        "time2claim": 3300000,
+        "unitsXSlot": 3,
+        "item": {
+            "itemName": "Cherries",
+            "type": "products",
+            "emoji": "🍒",
+            "price": 15,
+            "units": {
+                "min": 5,
+                "max": 10
+            }
+        }
+    },
+    {
+        "name": "Eggplants",
+        "type": "seed",
+        "emoji": "🍆",
+        "description": "Little but sweet couple of red fruits. Perfect to be topics to food, ice cream and much more.",
+        "time2claim": 3300000,
+        "unitsXSlot": 3,
+        "item": {
+            "itemName": "Eggplants",
+            "type": "products",
+            "emoji": "🍆",
+            "price": 55,
+            "units": {
+                "min": 1,
+                "max": 3
+            }
+        }
+    },
+    {
+        "name": "Green Pea",
+        "type": "seed",
+        "emoji": "🌱",
+        "description": "A little bag of peas that can be used as ingredient!",
+        "time2claim": 9000000,
+        "unitsXSlot": 2,
+        "item": {
+            "itemName": "Green Pea",
+            "type": "products",
+            "emoji": "🌱",
+            "price": 20,
+            "units": {
+                "min": 1,
+                "max": 10
+            }
+        }
+    },
+    {
+        "name": "Pumpkin",
+        "type": "seed",
+        "emoji": "🎃",
+        "description": "A hard vegetable that can be useful to make lamps and great food!",
+        "time2claim": 10800000,
+        "unitsXSlot": 1,
+        "item": {
+            "itemName": "Pumpkin",
+            "type": "products",
+            "emoji": "🎃",
+            "price": 75,
+            "units": {
+                "min": 1,
+                "max": 2
+            }
+        }
+    },
+    {
+        "name": "Diamond Fruit",
+        "type": "seed",
+        "emoji": "<:diamond_fruit:1184165721765326878>",
+        "description": "It is one of the 4 space fruits fallen from a wish on the shooting star. Its color and transparency make it very coveted and loved.",
+        "time2claim": 43200000,
+        "unitsXSlot": 1,
+        "item": {
+            "itemName": "Diamond Fruit",
+            "type": "products",
+            "emoji": "<:diamond_fruit:1184165721765326878>",
+            "price": 5000,
+            "units": {
+                "min": 1,
+                "max": 2
+            }
+        }
+    },
+    {
+        "name": "Emerald Fruit",
+        "type": "seed",
+        "emoji": "<:emerald_fruit:1184165720356036639>",
+        "description": "It is one of the 4 space fruits fallen from a wish on the shooting star. Its color and transparency make it very coveted and loved.",
+        "time2claim": 43200000,
+        "unitsXSlot": 1,
+        "item": {
+            "itemName": "Emerald Fruit",
+            "type": "products",
+            "emoji": "<:emerald_fruit:1184165720356036639>",
+            "price": 1500,
+            "units": {
+                "min": 1,
+                "max": 2
+            }
+        }
+    },
+    {
+        "name": "Amber Fruit",
+        "type": "seed",
+        "emoji": "<:ambar_fruit:1184165724147683360>",
+        "description": "It is one of the 4 space fruits fallen from a wish on the shooting star. Its color and transparency make it very coveted and loved.",
+        "time2claim": 43200000,
+        "unitsXSlot": 1,
+        "item": {
+            "itemName": "Amber Fruit",
+            "type": "products",
+            "emoji": "<:ambar_fruit:1184165724147683360>",
+            "price": 1000,
+            "units": {
+                "min": 1,
+                "max": 2
+            }
+        }
+    },
+    {
+        "name": "Ruby Fruit",
+        "type": "seed",
+        "emoji": "<:ruby_fruit:1184165717420023819>",
+        "description": "It is one of the 4 space fruits fallen from a wish on the shooting star. Its color and transparency make it very coveted and loved.",
+        "time2claim": 43200000,
+        "unitsXSlot": 1,
+        "item": {
+            "itemName": "Ruby Fruit",
+            "type": "products",
+            "emoji": "<:ruby_fruit:1184165717420023819>",
+            "price": 500,
+            "units": {
+                "min": 1,
+                "max": 2
+            }
+        }
+    }
+]
