@@ -1,6 +1,7 @@
 const Discord = require('discord.js')
 const farmer = require('../schema/farmer')
 const config = require('../config/config.json')
+const items = require('../config/items.json')
 
 module.exports = async (client, interaction) => {
     if (interaction.type == Discord.InteractionType.ApplicationCommand) {
@@ -35,9 +36,9 @@ module.exports = async (client, interaction) => {
     if (interaction.type == Discord.InteractionType.ApplicationCommandAutocomplete) {
         const cmd = interaction.client.commands.get(interaction.commandName)
         if (!cmd) return;
-        var consult = await farmer.findOne({ userId: interaction.user.id })
         switch (cmd.data.name) {
             case "plant":
+                var consult = await farmer.findOne({ userId: interaction.user.id })
                 if (!consult) return;
                 if (consult.inventory.length < 1) return;
                 consult.inventory = consult.inventory.filter((x, i) => x.type == "seed" && x.amount >= 1)
@@ -49,6 +50,7 @@ module.exports = async (client, interaction) => {
                 } catch (error) { return; }
                 break;
             case "sell":
+                var consult = await farmer.findOne({ userId: interaction.user.id })
                 if (!consult) return;
                 if (consult.inventory.length < 1) return;
                 consult.inventory = consult.inventory.filter((x) => x.type !== "seed" && x.amount >= 1)
@@ -58,6 +60,18 @@ module.exports = async (client, interaction) => {
                     client.searchBy.set(`sellBy${interaction.user.id}`, choices)
                     await cmd.autocomplete(client, interaction)
                 } catch (error) { return; }
+                break;
+            case "morpheus":
+                let allItems = []
+                for (const it in items) {
+                    items[it].map((x) => allItems.push(`${x.emoji.length >= 10 ? `✨` : x.emoji}-${x.name}-${x.type}`))
+                }
+                try {
+                    client.searchBy.set(`giveEvent${interaction.user.id}`, allItems)
+                    await cmd.autocomplete(client, interaction)
+                } catch (error) {
+                    return;
+                }
                 break;
         }
     }

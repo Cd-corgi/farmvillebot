@@ -36,6 +36,13 @@
             "price": 15
         },
         {
+            "name": "Peach",
+            "type": "seed",
+            "emoji": "🍑",
+            "stackable": true,
+            "price": 25
+        },
+        {
             "name": "Pumpkin",
             "type": "seed",
             "emoji": "🎃",
@@ -129,7 +136,7 @@
             "price": 10
         }
     ],
-    "products": [
+    "product": [
         {
             "name": "Cherries",
             "type": "products",
@@ -180,11 +187,25 @@
             "price": 100
         },
         {
+            "name": "Canned Peachs",
+            "type": "products",
+            "emoji": "🍮",
+            "stackable": true,
+            "price": 75
+        },
+        {
             "name": "Wheat",
             "type": "products",
             "emoji": "🌾",
             "stackable": true,
             "price": 30
+        },
+        {
+            "name": "Peach",
+            "type": "products",
+            "emoji": "🍑",
+            "stackable": true,
+            "price": 35
         },
         {
             "name": "Raw Salt",
@@ -287,7 +308,7 @@
             "price": 0
         }
     ],
-    "tokens": [
+    "token": [
         {
             "name": "Roullete Token",
             "type": "token",
@@ -301,7 +322,7 @@
             "stackable": true
         }
     ],
-    "crates": [
+    "crate": [
         {
             "name": "Old Box",
             "type": "crate",

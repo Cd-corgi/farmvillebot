@@ -19,6 +19,20 @@
         ]
     },
     {
+        "item": "Canned Peachs",
+        "emoji": "🍮",
+        "type": "products",
+        "description": "A Canned product that can be kept to a long time and they will be fresh during a lot of time",
+        "amountResult": 1,
+        "recipe": [
+            {
+                "name": "Peach",
+                "type": "products",
+                "amount": 2
+            }
+        ]
+    },
+    {
         "item": "Salad Bowl",
         "emoji": "🥗",
         "type": "products",

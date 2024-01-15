@@ -32,7 +32,7 @@ module.exports = {
       }
       const nFormat = Intl.NumberFormat()
 
-      let info = new Discord.EmbedBuilder().setTitle(`${interaction.user.username.endsWith("s") ? `${interaction.user.username}'` : `${interaction.user.username}'s`} Farmer tag`).addFields({ name: "🏠 House ID", value: `\`${consult.houseId}\``, inline: true, }, { name: "👛 Money", value: `💵 \`${nFormat.format(consult.economy.money)}\``, inline: true, }, { name: "💰 Bank", value: `💵 \`${nFormat.format(consult.economy.bank)}\``, inline: true, }).setThumbnail(interaction.user.displayAvatarURL()).setColor("Green")
+      let info = new Discord.EmbedBuilder().setTitle(`${interaction.user.username.endsWith("s") ? `${interaction.user.username}'` : `${interaction.user.username}'s`} Farmer tag`).addFields({ name: "🏠 House ID", value: `\`${consult.houseId}\``, inline: true, }, { name: "👛 Money", value: `💵 \`${nFormat.format(consult.economy.money)}\``, inline: true, }, { name: "💰 Bank", value: `💵 \`${nFormat.format(consult.economy.bank)}\``, inline: true, }, { name: `⚔ Clan`, value: `${consult.clan.clanName == undefined ? `\`None\`` : `\`${consult.clan.clanName}\``}`, inline: true }).setThumbnail(interaction.user.displayAvatarURL()).setColor("Green")
       if (consult.cooldowns.length > 0) {
         let getData = ""
         for (let i = 0; i < consult.cooldowns.length; i++) { getData += `> ${consult.cooldowns[i].emoji} \`${consult.cooldowns[i].name}\` <t:${Math.floor(consult.cooldowns[i].time / 1000)}:R>\n` } info.addFields({ name: "⌛ Cooldowns", value: `${getData}` })

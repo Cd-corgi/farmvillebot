@@ -2,7 +2,10 @@ const Discord = require('discord.js')
 const seeds = require('../config/seeds.json')
 const farmer = require('../schema/farmer')
 const crate = require('../dictionary/boxes.json')
-const { clearFilter, prepareFilter } = require('./filters'); const moment = require('moment'); const items = require('../config/items.json')
+const { clearFilter, prepareFilter } = require('./filters');
+const moment = require('moment');
+const items = require('../config/items.json')
+const morpheus = require('../schema/morpheus')
 
 module.exports = {
     houseId() {
@@ -188,6 +191,37 @@ module.exports = {
             }
         })
         collection.on("end", async (_, reason) => { return; })
+
+        async function clearFilter(client, us, DEmbeds) {
+            var farmers = await farmer.findOne({ userId: us.user.id })
+            let items = []
+            let limitXEmbed = 6
+            for (let i = 0; i < farmers.inventory.length; i += limitXEmbed) {
+                let item = farmers.inventory.slice(i, i + limitXEmbed)
+                item.map((x) => items.push({ name: `${x.emoji} ${x.name}`, value: `${x.type} x${x.amount}`, inline: true }))
+            }
+            DEmbeds = []
+            for (let i = 0; i < farmers.inventory.length; i += limitXEmbed) {
+                let item = items.slice(i, i + limitXEmbed)
+                const embed = new Discord.EmbedBuilder().setTitle(`🎒 Inventory`).setThumbnail(us.user.displayAvatarURL()).addFields(item).setColor("Green")
+                DEmbeds.push(embed)
+            }
+            return DEmbeds
+        }
+        async function prepareFilter(consulta, limitXEmbed, interaction) {
+            var newEmbeds = []
+            var filteredItems = []
+            for (let i = 0; i < consulta.length; i += limitXEmbed) {
+                var items = consulta.slice(i, i + limitXEmbed)
+                items.map((z) => filteredItems.push({ name: `${z.emoji} ${z.name}`, value: `${z.type} x ${z.amount}`, inline: true }))
+            }
+            for (let i = 0; i < filteredItems.length; i += limitXEmbed) {
+                var givinItems = filteredItems.slice(i, i + limitXEmbed)
+                const embed = new Discord.EmbedBuilder().setTitle(`🎒 Inventory`).setThumbnail(interaction.user.displayAvatarURL()).addFields(givinItems).setColor("Green")
+                newEmbeds.push(embed)
+            }
+            return newEmbeds
+        }
     },
     async loadEmbeds(limitXEmbed, consult, embed) {
         let items = []
@@ -308,18 +342,6 @@ module.exports = {
             }
         })
         await farmer.findOneAndUpdate({ userId: user.userId }, { inventory: user.inventory })
-        // user.inventory.forEach(async (x, i) => {
-        // console.log(list[idx])
-        // if (list[idx].item == "Money") { user.economy.money += list[idx].amount; idx++; await farmer.findOneAndUpdate({ userId: user.userId }, { economy: user.economy }) }
-        // if (user.inventory.some(c => c.name == list[idx].item && c.type == list[idx].type)) {
-        //     if (list[idx].item == x.name && list[idx].type == x.type) { x.amount += list[idx].amount }
-        //     idx++
-        // } else {
-        //     user.inventory.push({ name: list[idx].item, type: list[idx].type, emoji: list[idx].emoji, amount: list[idx].amount })
-        //     idx++
-        // }
-        // idx += 1
-        // })
     },
     async eventFallingStar(user, client, msg) {
         let getfarmer = await farmer.findOne({ userId: user })
@@ -339,7 +361,7 @@ module.exports = {
                 await farmer.findOneAndUpdate({ userId: user }, { inventory: getfarmer.inventory })
             }, 4500)
         }
-        if (prob >= 25 && prob <= 65) {
+        if (prob >= 25 && prob <= 65 && user.plotsSlot.length > 0) {
             let ss = ['Diamond Fruit', 'Emerald Fruit', 'Amber Fruit', 'Ruby Fruit']
             var plant = seeds[seeds.map((v) => v.name).indexOf(ss[Math.floor(Math.random() * (ss.length - 1))])]
             client.channels.cache.get(msg).send({ content: `${client.users.cache.get(user)}`, embeds: [new Discord.EmbedBuilder().setTitle(`✨ Unexpected Event!`).setDescription(`The Shooting Star just got redirected directly to one of your plots...\n\nOne of your plots have been destroyed and replaced by a strange seed...`).setImage("https://media.giphy.com/media/ZXMlDKOtuJmKI/giphy.gif")] })
@@ -356,6 +378,19 @@ module.exports = {
                 getfarmer.plotsSlot.push({ plotSlot: getfarmer.plotsSlot.length, plant: plant.name, emoji: plant.emoji, timeLimit: getCurTime })
                 return await farmer.findOneAndUpdate({ userId: user }, { plotsSlot: getfarmer.plotsSlot })
             }
+        } else if (prob >= 25 && prob <= 65) {
+            let seeds = ['Diamond Fruit', 'Emerald Fruit', 'Amber Fruit', 'Ruby Fruit']
+            var getSeedInfo = items.seed[items.seed.map((c) => c.name).indexOf(seeds[Math.floor(Math.random() * (seeds.length - 1))])]
+            let mm = await client.channels.cache.get(msg).send({ content: `${client.users.cache.get(user)}`, embeds: [new Discord.EmbedBuilder().setTitle(`✨ The Falling Star gives you a little present!`).setDescription(`The Shooting Star just got fragmented and something lands in your hands... They are seeds!`).setImage("https://media.giphy.com/media/fBbrOyzyUFLDq/giphy.gif")] })
+            setTimeout(async () => {
+                mm.edit({ embeds: [new Discord.EmbedBuilder().setTitle(`✨ Special Seed`).setDescription(`You got from the Shooting Star the following item(s):\n\n> ${getSeedInfo.emoji} \`${getSeedInfo.name}\` x 1`)] }).then((c) => setTimeout(() => c.delete(), 5000)).catch((error) => { })
+                if (getfarmer.inventory.some((v) => v.name == getSeedInfo.name && v.type == getSeedInfo.type)) {
+                    getfarmer.inventory.forEach((c, b) => { if (c.name == getSeedInfo.name && c.type == getSeedInfo.type) { return c.amount += 1 } })
+                } else {
+                    getfarmer.inventory.push({ name: getSeedInfo.name, type: getSeedInfo.type, emoji: getSeedInfo.emoji, amount: 1 })
+                }
+                await farmer.findOneAndUpdate({ userId: user }, { inventory: getfarmer.inventory })
+            }, 4500)
         }
         if (prob >= 65 && prob <= 100) {
             client.channels.cache.get(msg).send({ content: `${client.users.cache.get(user)}`, embeds: [new Discord.EmbedBuilder().setThumbnail("https://media.giphy.com/media/IdsBHeqRIzASVBihsa/giphy.gif").setTitle(`✨ The Falling Star just passed away`).setDescription(`The star was not the special one to give you a wish...\nI hope you can get a new chance ♥`).setColor("Red")] })
@@ -402,4 +437,16 @@ module.exports = {
         }
         return checked
     },
+    async sendAlarm(client, item, amount) {
+        let getGuilds = await morpheus.find()
+        for (const g of getGuilds) {
+            setTimeout(async () => {
+                try {
+                    let getGu = await client.guilds.fetch(g.guildId)
+                    let getChan = await getGu.channels.cache.get(g.channelId)
+                    getChan.send({ embeds: [new Discord.EmbedBuilder().setTitle(`✨🌛 Wow! Morpheus just sent something to the players!`).setColor("Gold").setImage("https://media.giphy.com/media/1guRIRI2WpWhF3DrVxC/giphy.gif").setDescription(`Morpheus just sent a little signal of all the loyality that you have to him!\nOnly if you have the item, will get this one!\n\nIn the door of your house you just found:\n${item.emoji} \`${item.name}\` (${item.type}) x ${amount}`)] })
+                } catch (error) { }
+            }, 5000)
+        }
+    }
 }

@@ -7,6 +7,10 @@ const Schema = new mongoose.Schema({
     money: { type: Number, default: 30 },
     bank: { type: Number, default: 0 },
   },
+  clan: {
+    clanName: String,
+    clanRole: String
+  },
   cooldowns: [],
   inventory: [],
   // 3 plants per plot | Default you have only one plot

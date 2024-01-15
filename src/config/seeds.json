@@ -126,6 +126,24 @@
         }
     },
     {
+        "name": "Peach",
+        "type": "seed",
+        "emoji": "🍑",
+        "description": "Sweet and soft fruit that can be a good juice",
+        "time2claim": 14400000,
+        "unitsXSlot": 2,
+        "item": {
+            "itemName": "Peach",
+            "type": "products",
+            "emoji": "🍑",
+            "price": 35,
+            "units": {
+                "min": 3,
+                "max": 6
+            }
+        }
+    },
+    {
         "name": "Diamond Fruit",
         "type": "seed",
         "emoji": "<:diamond_fruit:1184165721765326878>",
